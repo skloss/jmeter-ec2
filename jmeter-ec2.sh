@@ -903,7 +903,7 @@ function runcleanup() {
   fi
 
   # terminate any running instances created
-  if [ -z "$REMOTE_HOSTS" ]; then
+  #if [ -z "$REMOTE_HOSTS" ]; then
   	if [ "$terminate" = "TRUE" ] ; then
       echo
       echo
@@ -915,7 +915,7 @@ function runcleanup() {
 				--query 'TerminatingInstances[].InstanceId'
       echo
   	fi
-  fi
+  #fi
 
 	# Tidy up
   if [ -e "$project_home/$project-$DATETIME-grouped.jtl" ] ; then rm $project_home/$project-$DATETIME-grouped.jtl ; fi
