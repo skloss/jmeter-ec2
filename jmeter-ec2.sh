@@ -951,6 +951,7 @@ function runcleanup() {
   if [ -e "$project_home/$project-$DATETIME-complete.jtl" ] ; then
     mkdir -p $project_home/results/
     mv $project_home/$project-$DATETIME-complete.jtl $project_home/results/
+    cp test_project/results/* results/    
   fi
 
   # tidy up working files
